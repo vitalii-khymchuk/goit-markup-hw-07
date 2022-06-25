@@ -7,27 +7,21 @@
   color: #afb1b8;
   border: 1px solid currentColor;
   border-radius: 4px;
-  transition: var(--typical-transition);
+  transition: $typical-transition;
   flex-basis: calc((100% - 150px) / 6);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .clients__item + .clients__item {
-  margin-left: var(--typical-margine);
+  margin-left: $typical-margine;
 }
 
 .clients__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-centre();
   height: 92px;
   width: 100%;
-}
-
-.clients__icon {
-  fill: currentColor;
-}
-
-.clients__item:hover,
-.clients__item:focus {
-  color: var(--accent-color);
 }

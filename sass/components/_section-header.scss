@@ -1,9 +1,7 @@
 .section-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  @include text-prop(700, 36px, 1.16, null);
   text-align: center;
-  color: var(--primary-main-color);
+  color: $primary-main-color;
 
   margin-bottom: 50px;
 }

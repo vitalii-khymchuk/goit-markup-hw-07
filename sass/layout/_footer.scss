@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--extra-background-color);
+  background-color: $extra-background-color;
 
   padding-top: 60px;
   padding-bottom: 60px;
@@ -18,21 +18,19 @@
 }
 
 .address__link {
-  color: var(--extra-text-color);
-  transition: var(--typical-transition);
+  color: $extra-text-color;
+  transition: $typical-transition;
 }
 
 .address__link--light {
   font-style: normal;
-  color: var(--secondary-main-color);
+  color: $secondary-main-color;
 }
 
 .address__link:hover,
 .address__link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
-
-/* ПРИСОЕДИНЯЙТЕСЬ (FOOTER) */
 
 .footer__communities {
   width: 206px;
@@ -53,10 +51,8 @@
 
 .communities__item--light {
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--secondary-main-color);
+  color: $secondary-main-color;
 }
-
-/* FIELDS FOOTER */
 
 .footer__subscribe {
   margin-left: 93px;
@@ -85,7 +81,7 @@
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  color: var(--secondary-main-color);
+  color: $secondary-main-color;
 }
 
 .subscribe-form__label {
@@ -94,6 +90,7 @@
   left: 16px;
   transform: translateY(-50%);
   transition: transform 250ms linear;
+  color: #fff;
 }
 
 .subscribe-form__input:not(:placeholder-shown) + .subscribe-form__label,
@@ -107,15 +104,10 @@
   margin-left: 12px;
 
   border-color: transparent;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .subscribe-form__button-text {
   margin-right: 10px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--secondary-main-color);
+  @include text-prop(700, 16px, 1.88, 0.06em);
 }

@@ -1,23 +1,18 @@
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ @include flex-centre();
   font-family: inherit;
   cursor: pointer;
   border: none;
   border-radius: 4px;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  @include text-prop(700, 16px, 1.88, 00.06em);
 
-  color: var(--secondary-main-color);
-}
+  color: $secondary-main-color;
 
-.buttons:hover,
-.buttons:focus {
-  background-color: #188ce8;
-  box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
-    0px 3px 1px 0px #0000001a;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+      0px 3px 1px 0px #0000001a;
+  }
 }

@@ -1,6 +1,7 @@
 @import "./base/base-reset";
-@import "./base/font";
 @import "./utils/vars.scss";
+@import "./utils/mixines";
+@import "./base/font";
 @import "./utils/hidden";
 
 @import "./components/backdrop";
@@ -10,6 +11,7 @@
 @import "./components/section-header";
 @import "./components/buttons";
 @import "./components/filter";
+@import "./components/communities";
 
 @import "./layout/header";
 @import "./components/logo";

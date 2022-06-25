@@ -3,19 +3,17 @@
   top: 8px;
   right: 8px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-centre();
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  background-color: var(--secondary-main-color);
-  transition: var(--typical-transition);
-}
+  background-color: $secondary-main-color;
+  transition: $typical-transition;
 
-.close-button:hover,
-.close-button:focus {
-  background-color: #2196f3;
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
 }

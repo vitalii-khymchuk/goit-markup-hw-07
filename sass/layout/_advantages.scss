@@ -12,26 +12,22 @@
 }
 
 .advantages__item + .advantages__item {
-  margin-left: var(--typical-margine);
+  margin-left: $typical-margine;
 }
 
 .advantages__svg-wrapper {
   height: 120px;
   width: 100%;
   background-color: #f5f4fa;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-centre();
 
   margin-bottom: 30px;
 }
 
 .advantages__header {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include text-prop(700, 14px, 1.14, null);
   text-transform: uppercase;
-  color: var(--primary-main-color);
+  color: $primary-main-color;
 
   margin-bottom: 10px;
 }

@@ -1,5 +1,5 @@
 .hero {
-  background-color: var(--extra-background-color);
+  background-color: $extra-background-color;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -17,14 +17,11 @@
 }
 
 .hero__header {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @include text-prop(900, 44px, 1.36, 0.06em);
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   display: inline-block;
-  color: var(--secondary-main-color);
+  color: $secondary-main-color;
 
   max-width: 696px;
   margin-bottom: 30px;
@@ -34,7 +31,7 @@
   margin: 0 auto;
   padding: 10px 32px;
 
-  background-color: var(--accent-color);
-  color: var(--secondary-main-color);
-  transition: var(--typical-transition);
+  background-color: $accent-color;
+  color: $secondary-main-color;
+  transition: $typical-transition;
 }
