@@ -10,14 +10,12 @@
   transition: $typical-transition;
   flex-basis: calc((100% - 150px) / 6);
 
+  & + & {margin-left: $typical-margine;}
+
   &:hover,
   &:focus {
     color: $accent-color;
   }
-}
-
-.clients__item + .clients__item {
-  margin-left: $typical-margine;
 }
 
 .clients__link {

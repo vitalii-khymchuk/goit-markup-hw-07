@@ -9,10 +9,9 @@
 
 .advantages__item {
   flex-basis: calc((100% - 90px) / 4);
-}
-
-.advantages__item + .advantages__item {
-  margin-left: $typical-margine;
+  & + & {
+    margin-left: $typical-margine;
+  }
 }
 
 .advantages__svg-wrapper {

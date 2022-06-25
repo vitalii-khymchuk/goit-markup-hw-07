@@ -20,16 +20,15 @@
 .address__link {
   color: $extra-text-color;
   transition: $typical-transition;
-}
 
-.address__link--light {
-  font-style: normal;
-  color: $secondary-main-color;
-}
-
-.address__link:hover,
-.address__link:focus {
-  color: $accent-color;
+  &--light {
+    font-style: normal;
+    color: $secondary-main-color;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .footer__communities {
@@ -47,11 +46,6 @@
   text-transform: uppercase;
 
   color: #ffffff;
-}
-
-.communities__item--light {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: $secondary-main-color;
 }
 
 .footer__subscribe {
@@ -91,11 +85,11 @@
   transform: translateY(-50%);
   transition: transform 250ms linear;
   color: #fff;
-}
 
-.subscribe-form__input:not(:placeholder-shown) + .subscribe-form__label,
-.subscribe-form__field:focus-within .subscribe-form__label {
-  transform: translateY(-50px);
+  .subscribe-form__input:not(:placeholder-shown) + &,
+  .subscribe-form__field:focus-within & {
+    transform: translateY(-50px);
+  }
 }
 
 .subscribe-form__button {
