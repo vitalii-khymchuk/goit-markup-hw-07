@@ -1,0 +1,23 @@
+@import "./base/base-reset";
+@import "./base/font";
+@import "./utils/vars.scss";
+@import "./utils/hidden";
+
+@import "./components/backdrop";
+@import "./components/_close-button";
+@import "./components/section";
+@import "./components/container";
+@import "./components/section-header";
+@import "./components/buttons";
+@import "./components/filter";
+
+@import "./layout/header";
+@import "./components/logo";
+@import "./layout/hero";
+@import "./layout/advantages";
+@import "./layout/specialisation";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/modal-window";
+@import "./layout/portfolio";
